@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Master Construction | Excelencia Moderna Industrial</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6600", // Safety Orange
+                        "primary-dark": "#ea580c",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#1a1a1a", // Graphite Gray
+                        "graphite": "#2c2c2c",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <!-- Botón Flotante WhatsApp -->
+    <a class="whatsapp-float flex items-center justify-center size-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-transform"
+        href="https://wa.me/1234567890" title="Contáctanos por WhatsApp">
+        <span class="material-symbols-outlined text-3xl">chat</span>
+    </a>
+    <!-- Top Navigation -->
+    <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-graphite px-6 md:px-20 py-4 sticky top-0 z-50">
+        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+            <div class="size-8 bg-primary flex items-center justify-center rounded">
+                <svg class="text-white size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V44Z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-xl font-bold leading-tight tracking-tight uppercase">Master Construction</h2>
+        </div>
+        <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+            <nav class="flex items-center gap-9">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#inicio">Inicio</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+            </nav>
+            <button
+                class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold uppercase tracking-wider transition-opacity hover:opacity-90">
+                Contáctanos
+            </button>
+        </div>
+        <div class="md:hidden">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-background-dark" id="inicio">
+            <div class="absolute inset-0 -scale-x-100 bg-cover bg-center bg-no-repeat"
+                style='background-image: url("bg.jpg");'></div>
+            <div class="flex min-h-[600px] md:min-h-[819px] flex-col gap-6 items-start justify-center px-6 md:px-20 py-20 relative overflow-hidden"
+                data-alt="Obra de construcción moderna con vigas de acero"
+                style='background-image: linear-gradient(to right, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0.4) 100%);'>
+                <div class="flex flex-col gap-4 max-w-3xl">
+                    <div class="h-1 w-20 bg-primary"></div>
+                    <h1 class="text-white text-5xl md:text-7xl font-bold leading-tight tracking-tighter uppercase">
+                        De la Idea a la <br /><span class="text-primary">Llave en Mano</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg md:text-xl font-light leading-relaxed max-w-xl">
+                        Maestría Moderna Industrial para su próximo proyecto. Construcción confiable, experta y
+                        artesanal que resiste el paso del tiempo.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <button
+                            class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold uppercase tracking-wider hover:bg-primary-dark transition-all shadow-lg">
+                            Inicia Tu Proyecto
+                        </button>
+                        <button
+                            class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 border-2 border-white text-white text-base font-bold uppercase tracking-wider hover:bg-white hover:text-background-dark transition-all">
+                            Ver Portafolio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-20 px-6 md:px-20 bg-background-light" id="servicios">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-widest text-sm">Nuestra
+                            Experiencia</span>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-2">Servicios Especializados</h2>
+                    </div>
+                    <p class="text-slate-600 max-w-md">Combinamos artesanía tradicional con técnicas industriales
+                        modernas para entregar resultados superiores en cada obra.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Gasfitería -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">plumbing</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Gasfitería</h3>
+                            <p class="text-slate-600 leading-relaxed">Instalaciones técnicas y certificadas con los más
+                                altos estándares de seguridad.</p>
+                        </div>
+                    </div>
+                    <!-- Electricidad -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">electrical_services</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Electricidad</h3>
+                            <p class="text-slate-600 leading-relaxed">Instalaciones eléctricas seguras y normativas para
+                                hogares e industrias.</p>
+                        </div>
+                    </div>
+                    <!-- Carpintería -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">handyman</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Carpintería</h3>
+                            <p class="text-slate-600 leading-relaxed">Especialistas en obra gruesa y terminaciones finas
+                                de alta precisión.</p>
+                        </div>
+                    </div>
+                    <!-- Cerámica y Porcelanato -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">grid_view</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Cerámica y Porcelanato</h3>
+                            <p class="text-slate-600 leading-relaxed">Revestimientos de alta precisión para pisos y
+                                muros con acabados perfectos.</p>
+                        </div>
+                    </div>
+                    <!-- Casas Llave en Mano -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm lg:col-span-1">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">home</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Casas Llave en Mano</h3>
+                            <p class="text-slate-600 leading-relaxed">Proyectos completos, obra vendida o mano de obra
+                                profesional garantizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="py-20 px-6 md:px-20 bg-white" id="proyectos">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-primary font-bold uppercase tracking-widest text-sm">Portafolio</span>
+                    <h2 class="text-4xl font-bold text-slate-900 mt-2 uppercase">Proyectos Recientes</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(0)">
+                        <img alt="Villa de lujo moderna"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p1_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Proyecto Residencial Paine</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obra Gruesa y Terminaciones</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(1)">
+                        <img alt="Interior estilo industrial"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p2_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Tutti Bar de Café</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción Comercial Completa</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(2)">
+                        <img alt="Fachada comercial moderna"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p3_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Mobiliario de Cocina a Medida</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Diseño y Fabricación en Madera</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(3)">
+                        <img alt="Proyecto 4"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p4_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Joyería Boutique</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Terminaciones Finas y Detalles</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(4)">
+                        <img alt="Proyecto 5"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p5_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Fundaciones y Pilotaje</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obras Estructurales de Base</p>
+                        </div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-lg bg-slate-100 cursor-pointer aspect-[4/3]"
+                        onclick="openGallery(5)">
+                        <img alt="Proyecto 6"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
+                            src="img/p6_img1.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-lg font-bold gallery-title">Residencia Llave en Mano</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción Integral desde Cero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="py-24 px-6 md:px-20 bg-background-dark text-white" id="nosotros">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary"></div>
+                    <img alt="Profesional revisando planos"
+                        class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcj-zpbbmpI5-oppGOhByQ4J1aY9YEvh_QFKKeRy-xXjuXk33LmoSCA54lH29TrUcoJh8QirRQB2bsJc7igM4VMJ_iXHvsIY7GvpOH7HMjwWzc06QyyvOI7HyWHwxfvnXFRfjJEkKY-_i4jbeepyeVOEoXLgtkj-Levj9cvZgWcBzofaEFARykfbuM5DhO7zCOVND5zgxLJzGJIe6cRjeqCTmB69npq90Ns31PZh0iAY73Z2XGUWYQc_3tJ2IoF50NtDqtEoeybtOZ" />
+                    <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block shadow-xl">
+                        <p class="text-5xl font-black text-white">15+</p>
+                        <p class="text-sm font-bold uppercase tracking-widest text-white">Años de Experiencia</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-widest text-sm">El Estándar Master</span>
+                        <h2 class="text-4xl md:text-5xl font-bold mt-2 uppercase italic leading-tight">Construido con
+                            Integridad, Terminado con Precisión</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-primary">
+                                <span class="material-symbols-outlined text-3xl">verified</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold uppercase">Integridad Estructural</h4>
+                                <p class="text-slate-400">No solo construimos estética. Cada proyecto está diseñado para
+                                    superar los estándares de seguridad y longevidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary">
+                                <span class="material-symbols-outlined text-3xl">architecture</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold uppercase">Atención al Detalle</h4>
+                                <p class="text-slate-400">Desde esquinas ingleteadas hasta transiciones perfectas,
+                                    nuestra artesanía es visible en los detalles más pequeños.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary">
+                                <span class="material-symbols-outlined text-3xl">construction</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold uppercase">Estética Moderna Industrial</h4>
+                                <p class="text-slate-400">Especializados en la fusión de materiales crudos (acero,
+                                    concreto y madera) en espacios de vida sofisticados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-white py-24 px-6 md:px-20 border-t border-slate-200">
+            <div class="max-w-[1200px] mx-auto flex flex-col items-center text-center">
+                <div class="flex items-center gap-4 text-slate-900 mb-10">
+                    <div class="size-10 bg-primary flex items-center justify-center rounded">
+                        <svg class="text-white size-8" fill="none" viewbox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V44Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold leading-tight tracking-tight uppercase">Master Construction</h2>
+                </div>
+                <p class="text-slate-600 mb-12 max-w-2xl text-xl leading-relaxed">
+                    ¿Listo para transformar su visión en realidad? Nuestro equipo de expertos está listo para asesorarle
+                    en su próximo gran proyecto.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 w-full max-w-4xl">
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                        </div>
+                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Dirección</h4>
+                        <p class="text-slate-600">123 Industrial Way, Metro City</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">call</span>
+                        </div>
+                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Teléfono</h4>
+                        <p class="text-slate-600">+1 (555) 000-MASTER</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">mail</span>
+                        </div>
+                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Email</h4>
+                        <p class="text-slate-600">contacto@masterconstruction.com</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-6">
+                    <a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl"
+                        href="https://wa.me/1234567890">
+                        <span class="material-symbols-outlined">chat</span>
+                        Háblanos por WhatsApp
+                    </a>
+                </div>
+                <div
+                    class="w-full mt-24 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between text-slate-500 text-sm">
+                    <p>© 2024 Master Construction. Todos los derechos reservados.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+                        <a class="hover:text-primary transition-colors" href="#">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal"
+        class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center transition-opacity"
+        aria-modal="true" role="dialog">
+        <!-- Close Button -->
+        <button onclick="closeGallery()"
+            class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors p-2 z-50 cursor-pointer">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+
+        <!-- Next/Prev Buttons -->
+        <button onclick="prevGalleryImage(event)"
+            class="absolute left-4 md:left-10 text-white/50 hover:text-white transition-colors p-2 z-50 cursor-pointer">
+            <span class="material-symbols-outlined text-5xl md:text-6xl">chevron_left</span>
+        </button>
+
+        <button onclick="nextGalleryImage(event)"
+            class="absolute right-4 md:right-10 text-white/50 hover:text-white transition-colors p-2 z-50 cursor-pointer">
+            <span class="material-symbols-outlined text-5xl md:text-6xl">chevron_right</span>
+        </button>
+
+        <!-- Image Container -->
+        <div
+            class="relative w-full max-w-5xl px-4 md:px-16 mx-auto flex flex-col items-center justify-center h-full min-h-[50vh] max-h-[85vh]">
+            <img id="galleryImage" src="" alt="Gallery Image"
+                class="max-h-[70vh] max-w-full object-contain rounded shadow-2xl transition-opacity duration-300 opacity-0" />
+
+            <!-- Caption -->
+            <div class="absolute bottom-[-4rem] left-0 right-0 text-center px-4 flex flex-col items-center">
+                <h4 id="galleryTitle" class="text-white text-2xl font-bold drop-shadow-md"></h4>
+                <p id="galleryCategory"
+                    class="text-primary text-sm font-bold uppercase tracking-wider mt-1 drop-shadow-md"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentProjectIndex = 0;
+        let currentGalleryIndex = 0;
+        const projectGalleries = {};
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('.gallery-img');
+            const titles = document.querySelectorAll('.gallery-title');
+            const categories = document.querySelectorAll('.gallery-category');
+
+            images.forEach((img, index) => {
+                const title = titles[index] ? titles[index].innerText : '';
+                const category = categories[index] ? categories[index].innerText : '';
+                const pNum = index + 1;
+
+                // Add the first (required) image immediately
+                projectGalleries[index] = [{
+                    src: `img/p${pNum}_img1.jpg`,
+                    title: title,
+                    category: category
+                }];
+
+                // Dynamically probe for subsequent images (img2, img3, ...)
+                const checkNextImage = (i) => {
+                    const imgObj = new Image();
+                    imgObj.onload = () => {
+                        projectGalleries[index].push({
+                            src: imgObj.src,
+                            title: `${title} - Vista ${i}`,
+                            category: category
+                        });
+                        checkNextImage(i + 1); // Probe the next one only after this succeeds
+                    };
+                    imgObj.onerror = () => {
+                        // End of sequence for this project, do nothing
+                    };
+                    imgObj.src = `img/p${pNum}_img${i}.jpg`;
+                };
+
+                // Start probing from image #2
+                checkNextImage(2);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (document.getElementById('galleryModal').classList.contains('hidden')) return;
+                if (e.key === 'Escape') closeGallery();
+                if (e.key === 'ArrowRight') nextGalleryImage();
+                if (e.key === 'ArrowLeft') prevGalleryImage();
+            });
+        });
+
+        const modal = document.getElementById('galleryModal');
+        const modalImg = document.getElementById('galleryImage');
+        const modalTitle = document.getElementById('galleryTitle');
+        const modalCategory = document.getElementById('galleryCategory');
+
+        function updateGalleryView() {
+            const gallery = projectGalleries[currentProjectIndex];
+            if (!gallery) return;
+
+            const item = gallery[currentGalleryIndex];
+            if (!item) return;
+
+            modalImg.style.opacity = '0';
+
+            setTimeout(() => {
+                modalImg.src = item.src;
+                modalTitle.innerText = item.title;
+                modalCategory.innerText = item.category;
+                modalImg.style.opacity = '1';
+            }, 150);
+        }
+
+        function openGallery(projectIndex) {
+            currentProjectIndex = projectIndex;
+            currentGalleryIndex = 0;
+            updateGalleryView();
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGallery() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function nextGalleryImage(e) {
+            if (e) e.stopPropagation();
+            const gallery = projectGalleries[currentProjectIndex];
+            currentGalleryIndex = (currentGalleryIndex + 1) % gallery.length;
+            updateGalleryView();
+        }
+
+        function prevGalleryImage(e) {
+            if (e) e.stopPropagation();
+            const gallery = projectGalleries[currentProjectIndex];
+            currentGalleryIndex = (currentGalleryIndex - 1 + gallery.length) % gallery.length;
+            updateGalleryView();
+        }
+    </script>
+</body>
+
+</html>
