@@ -209,7 +209,7 @@
                         onclick="openGallery(0)">
                         <img alt="Villa de lujo moderna"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p1_img1.jpg" />
+                            src="p1_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Proyecto Residencial Paine</h4>
@@ -221,7 +221,7 @@
                         onclick="openGallery(1)">
                         <img alt="Interior estilo industrial"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p2_img1.jpg" />
+                            src="p2_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Tutti Bar de Café</h4>
@@ -233,7 +233,7 @@
                         onclick="openGallery(2)">
                         <img alt="Fachada comercial moderna"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p3_img1.jpg" />
+                            src="p3_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Mobiliario de Cocina a Medida</h4>
@@ -245,7 +245,7 @@
                         onclick="openGallery(3)">
                         <img alt="Proyecto 4"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p4_img1.jpg" />
+                            src="p4_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Joyería Boutique</h4>
@@ -257,7 +257,7 @@
                         onclick="openGallery(4)">
                         <img alt="Proyecto 5"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p5_img1.jpg" />
+                            src="p5_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Fundaciones y Pilotaje</h4>
@@ -269,7 +269,7 @@
                         onclick="openGallery(5)">
                         <img alt="Proyecto 6"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="img/p6_img1.jpg" />
+                            src="p6_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Residencia Llave en Mano</h4>
@@ -445,7 +445,7 @@
 
                 // Add the first (required) image immediately
                 projectGalleries[index] = [{
-                    src: `img/p${pNum}_img1.jpg`,
+                    src: `p${pNum}_img1.jpg`,
                     title: title,
                     category: category
                 }];
@@ -464,7 +464,7 @@
                     imgObj.onerror = () => {
                         // End of sequence for this project, do nothing
                     };
-                    imgObj.src = `img/p${pNum}_img${i}.jpg`;
+                    imgObj.src = `p${pNum}_img${i}.jpg`;
                 };
 
                 // Start probing from image #2
