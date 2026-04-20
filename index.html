@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Master Construction | Excelencia Moderna Industrial</title>
+    <title>Construcciones Díaz Chile | Excelencia en Construcción</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -39,6 +39,10 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -55,7 +59,7 @@
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
     <!-- Botón Flotante WhatsApp -->
     <a class="whatsapp-float flex items-center justify-center size-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-transform"
-        href="https://wa.me/1234567890" title="Contáctanos por WhatsApp">
+        href="https://wa.me/56932082081?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto" target="_blank" title="Contáctanos por WhatsApp">
         <span class="material-symbols-outlined text-3xl">chat</span>
     </a>
     <!-- Top Navigation -->
@@ -68,7 +72,7 @@
                         fill="currentColor" fill-rule="evenodd"></path>
                 </svg>
             </div>
-            <h2 class="text-xl font-bold leading-tight tracking-tight uppercase">Master Construction</h2>
+            <h2 class="text-xl font-bold leading-tight tracking-tight uppercase">Construcciones Díaz Chile</h2>
         </div>
         <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
             <nav class="flex items-center gap-9">
@@ -77,10 +81,10 @@
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
             </nav>
-            <button
+            <a href="https://wa.me/56932082081?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto" target="_blank"
                 class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold uppercase tracking-wider transition-opacity hover:opacity-90">
                 Contáctanos
-            </button>
+            </a>
         </div>
         <div class="md:hidden">
             <span class="material-symbols-outlined text-3xl">menu</span>
@@ -90,8 +94,8 @@
         <!-- Hero Section -->
         <section class="relative bg-background-dark" id="inicio">
             <div class="absolute inset-0 -scale-x-100 bg-cover bg-center bg-no-repeat"
-                style='background-image: url("bg.jpg");'></div>
-            <div class="flex min-h-[600px] md:min-h-[819px] flex-col gap-6 items-start justify-center px-6 md:px-20 py-20 relative overflow-hidden"
+                style='background-image: url("images/bg.jpg");'></div>
+            <div class="relative z-10 flex min-h-[600px] md:min-h-[819px] flex-col gap-6 items-start justify-center px-6 md:px-20 py-20 overflow-hidden"
                 data-alt="Obra de construcción moderna con vigas de acero"
                 style='background-image: linear-gradient(to right, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0.4) 100%);'>
                 <div class="flex flex-col gap-4 max-w-3xl">
@@ -104,14 +108,14 @@
                         artesanal que resiste el paso del tiempo.
                     </p>
                     <div class="flex flex-wrap gap-4 mt-4">
-                        <button
+                        <a href="https://wa.me/56932082081?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto" target="_blank"
                             class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold uppercase tracking-wider hover:bg-primary-dark transition-all shadow-lg">
                             Inicia Tu Proyecto
-                        </button>
-                        <button
+                        </a>
+                        <a href="#proyectos"
                             class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 border-2 border-white text-white text-base font-bold uppercase tracking-wider hover:bg-white hover:text-background-dark transition-all">
                             Ver Portafolio
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -138,8 +142,7 @@
                         </div>
                         <div class="flex flex-col gap-2">
                             <h3 class="text-xl font-bold text-slate-900 uppercase">Gasfitería</h3>
-                            <p class="text-slate-600 leading-relaxed">Instalaciones técnicas y certificadas con los más
-                                altos estándares de seguridad.</p>
+                            <p class="text-slate-600 leading-relaxed">Instalaciones y reparaciones generales con amplia experiencia práctica y atención al detalle.</p>
                         </div>
                     </div>
                     <!-- Electricidad -->
@@ -181,17 +184,28 @@
                                 muros con acabados perfectos.</p>
                         </div>
                     </div>
-                    <!-- Casas Llave en Mano -->
+                    <!-- Casas y Estructuras -->
                     <div
-                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm lg:col-span-1">
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
                         <div
                             class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                             <span class="material-symbols-outlined text-3xl">home</span>
                         </div>
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-xl font-bold text-slate-900 uppercase">Casas Llave en Mano</h3>
-                            <p class="text-slate-600 leading-relaxed">Proyectos completos, obra vendida o mano de obra
-                                profesional garantizada.</p>
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Proyectos Integrales</h3>
+                            <p class="text-slate-600 leading-relaxed">Construcción llave en mano de casas, quinchos, terrazas, gimnasios, bodegas y oficinas.</p>
+                        </div>
+                    </div>
+                    <!-- Revestimientos -->
+                    <div
+                        class="group flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 hover:border-primary transition-all duration-300 shadow-sm">
+                        <div
+                            class="text-primary w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">view_cozy</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-xl font-bold text-slate-900 uppercase">Wallpanel y Siding</h3>
+                            <p class="text-slate-600 leading-relaxed">Instalación experta de revestimientos interiores y exteriores para modernizar y proteger tus espacios.</p>
                         </div>
                     </div>
                 </div>
@@ -209,11 +223,12 @@
                         onclick="openGallery(0)">
                         <img alt="Villa de lujo moderna"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p1_img1.jpg" />
+                            src="images/p1_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Proyecto Residencial Paine</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obra Gruesa y Terminaciones</p>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obra Gruesa y
+                                Terminaciones</p>
                         </div>
                     </div>
 
@@ -221,11 +236,12 @@
                         onclick="openGallery(1)">
                         <img alt="Interior estilo industrial"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p2_img1.jpg" />
+                            src="images/p2_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Tutti Bar de Café</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción Comercial Completa</p>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción
+                                Comercial Completa</p>
                         </div>
                     </div>
 
@@ -233,11 +249,12 @@
                         onclick="openGallery(2)">
                         <img alt="Fachada comercial moderna"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p3_img1.jpg" />
+                            src="images/p3_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
-                            <h4 class="text-white text-lg font-bold gallery-title">Mobiliario de Cocina a Medida</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Diseño y Fabricación en Madera</p>
+                            <h4 class="text-white text-lg font-bold gallery-title">Proyecto Residencial Aculeo</h4>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obra Gruesa y
+                                Terminaciones</p>
                         </div>
                     </div>
 
@@ -245,11 +262,12 @@
                         onclick="openGallery(3)">
                         <img alt="Proyecto 4"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p4_img1.jpg" />
+                            src="images/p4_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Joyería Boutique</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Terminaciones Finas y Detalles</p>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Terminaciones
+                                Finas y Detalles</p>
                         </div>
                     </div>
 
@@ -257,11 +275,12 @@
                         onclick="openGallery(4)">
                         <img alt="Proyecto 5"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p5_img1.jpg" />
+                            src="images/p5_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Fundaciones y Pilotaje</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obras Estructurales de Base</p>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Obras
+                                Estructurales de Base</p>
                         </div>
                     </div>
 
@@ -269,11 +288,12 @@
                         onclick="openGallery(5)">
                         <img alt="Proyecto 6"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 gallery-img"
-                            src="p6_img1.jpg" />
+                            src="images/p6_img1.jpg" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent flex flex-col justify-end p-6">
                             <h4 class="text-white text-lg font-bold gallery-title">Residencia Llave en Mano</h4>
-                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción Integral desde Cero</p>
+                            <p class="text-primary text-xs font-bold uppercase gallery-category mt-1">Construcción
+                                Integral desde Cero</p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +306,7 @@
                     <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary"></div>
                     <img alt="Profesional revisando planos"
                         class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
-                        src="mabri3.png" />
+                        src="images/mabri3.png" />
                     <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block shadow-xl">
                         <p class="text-5xl font-black text-white">15+</p>
                         <p class="text-sm font-bold uppercase tracking-widest text-white">Años de Experiencia</p>
@@ -294,7 +314,7 @@
                 </div>
                 <div class="flex flex-col gap-8">
                     <div>
-                        <span class="text-primary font-bold uppercase tracking-widest text-sm">El Estándar Master</span>
+                        <span class="text-primary font-bold uppercase tracking-widest text-sm">Nuestro Estándar</span>
                         <h2 class="text-4xl md:text-5xl font-bold mt-2 uppercase italic leading-tight">Construido con
                             Integridad, Terminado con Precisión</h2>
                     </div>
@@ -344,48 +364,40 @@
                                 fill="currentColor" fill-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h2 class="text-3xl font-bold leading-tight tracking-tight uppercase">Master Construction</h2>
+                    <h2 class="text-3xl font-bold leading-tight tracking-tight uppercase">Construcciones Díaz Chile</h2>
                 </div>
                 <p class="text-slate-600 mb-12 max-w-2xl text-xl leading-relaxed">
                     ¿Listo para transformar su visión en realidad? Nuestro equipo de expertos está listo para asesorarle
                     en su próximo gran proyecto.
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 w-full max-w-4xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 w-full max-w-2xl">
                     <div class="flex flex-col items-center gap-4">
                         <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                            <span class="material-symbols-outlined text-2xl">map</span>
                         </div>
-                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Dirección</h4>
-                        <p class="text-slate-600">123 Industrial Way, Metro City</p>
+                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Cobertura</h4>
+                        <p class="text-slate-600 text-center">Disponibilidad para proyectos en todo Chile</p>
                     </div>
                     <div class="flex flex-col items-center gap-4">
                         <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                             <span class="material-symbols-outlined text-2xl">call</span>
                         </div>
                         <h4 class="font-bold uppercase tracking-wider text-slate-900">Teléfono</h4>
-                        <p class="text-slate-600">+1 (555) 000-MASTER</p>
-                    </div>
-                    <div class="flex flex-col items-center gap-4">
-                        <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined text-2xl">mail</span>
-                        </div>
-                        <h4 class="font-bold uppercase tracking-wider text-slate-900">Email</h4>
-                        <p class="text-slate-600">contacto@masterconstruction.com</p>
+                        <p class="text-slate-600">+56 9 3208 2081</p>
                     </div>
                 </div>
                 <div class="flex flex-col items-center gap-6">
                     <a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl"
-                        href="https://wa.me/1234567890">
+                        href="https://wa.me/56932082081?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto" target="_blank">
                         <span class="material-symbols-outlined">chat</span>
                         Háblanos por WhatsApp
                     </a>
                 </div>
                 <div
                     class="w-full mt-24 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between text-slate-500 text-sm">
-                    <p>© 2024 Master Construction. Todos los derechos reservados.</p>
-                    <div class="flex gap-6 mt-4 md:mt-0">
-                        <a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a>
-                        <a class="hover:text-primary transition-colors" href="#">Términos de Servicio</a>
+                    <p>© 2024 Construcciones Díaz Chile. Todos los derechos reservados.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0 items-center">
+                        <span class="text-slate-500">Desarrollado por <a class="font-bold text-primary hover:underline transition-colors" href="https://dbr.cl" target="_blank">dbr.cl</a></span>
                     </div>
                 </div>
             </div>
@@ -445,7 +457,7 @@
 
                 // Add the first (required) image immediately
                 projectGalleries[index] = [{
-                    src: `p${pNum}_img1.jpg`,
+                    src: `images/p${pNum}_img1.jpg`,
                     title: title,
                     category: category
                 }];
@@ -464,7 +476,7 @@
                     imgObj.onerror = () => {
                         // End of sequence for this project, do nothing
                     };
-                    imgObj.src = `p${pNum}_img${i}.jpg`;
+                    imgObj.src = `images/p${pNum}_img${i}.jpg`;
                 };
 
                 // Start probing from image #2
